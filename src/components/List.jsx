@@ -46,7 +46,7 @@ function List() {
                         onChange={(e)=>handleNewItem(e)}
                         className="w-9/12 placeholder:text-gray-500  placeholder:italic placeholder:text-[0.7rem] bg-slate-400 outline-none pl-8 border-blue-500 z-10 "  type="text" />
                       <div>
-                      <button onClick={()=>{ handleDiverse(),collection.checked = false}} className="my-auto"><BiCheck/></button>
+                      <button onClick={()=>{ handleDiverse();collection.checked = false}} className="my-auto"><BiCheck/></button>
                       </div>
                     </div>
                   <div className="flex  justify-center gap-1">
