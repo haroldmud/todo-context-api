@@ -1,5 +1,4 @@
-import { createContext } from "react";
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const ListContext = createContext();
 
@@ -36,8 +35,8 @@ const ProvideList =(props)=>{
     setList(newList);setCheck(-1)
   }
 
-  function handleItem(x){
-    setItem(x.target.value);
+  function handleItem(behavior){
+    setItem(behavior.target.value);
   }
 
   function handleCheck(collection, idx){

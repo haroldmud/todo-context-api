@@ -1,4 +1,3 @@
-import React from 'react'
 import { useContext } from 'react'
 import {VscDiffAdded} from "react-icons/vsc"
 import {GrFormTrash} from  "react-icons/gr"
@@ -14,7 +13,7 @@ function List() {
   const {list,item,check,edit,alerte,limit,newItem, handleList, handleCheck, handleDeletion, handleEdit, handleItem, handleNewItem, handleDiverse} = useContext(ListContext)
   return (
     <section className="flex justify-center">
-      <div className="flex flex-col w-5/12 h-[100vh] justify-center">
+      <div className="flex flex-col w-5/12 h-[100vh] justify-rcenter">
         <div className=" border border-gray-500 h-[45rem]">
           <h1 className="text-center text-gray-200 font-bold text-7xl underline mt-6">TODO</h1>
           <div className="flex justify-center">
